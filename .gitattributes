@@ -1,2 +1,11 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+function sendQuery() {
+  var userQuery = prompt("Please enter your query:");
+
+  if (userQuery !== "") {
+    console.log("Your Query is: " + userQuery);
+    return userQuery;
+  } else {
+    console.log("Please enter a query before sending.");
+    return null;
+  }
+}
